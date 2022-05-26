@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="./styles.css">
+
+    <!-- fa cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="content">
+
+        <!-- images -->
+        <div class="images">
+            <img src="./images/boy.bg.jpeg" alt="boy">
+            <img src="./images/code.bg.png" alt="code">
+            <img src="./images/nike.bg.jpg" alt="nike">
+            <img src="./images/shoe.bg.jpg" alt="shoe">
+            <img src="./images/table.bg.jpeg" alt="table">
+        </div>
+
+        <!-- left arrow -->
+        <div onclick="side_slide(-1)" class="slide left">
+            <button>
+                <span class="fas fa-angle-left"></span>
+            </button>
+        </div>
+
+        <!-- right arrow -->
+        <div onclick="side_slide(1)" class="slide right">
+            <button>
+                <span class="fas fa-angle-right"></span>
+            </button>
+        </div>
+
+        <!-- btm slider -->
+        <div class="btm-sliders">
+            <span onclick="btm_slide(1)"></span>
+            <span onclick="btm_slide(2)"></span>
+            <span onclick="btm_slide(3)"></span>
+            <span onclick="btm_slide(4)"></span>
+            <span onclick="btm_slide(5)"></span>
+        </div>
+
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
